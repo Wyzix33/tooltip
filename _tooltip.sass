@@ -1,0 +1,59 @@
+@import ~tippy.js/dist/svg-arrow
+.tippy-box
+ background-color: $white-color
+ color: $blue2-color
+ outline: none
+ box-shadow: 1px 1px 4px $transparent-black1-color
+ .svg-content
+  fill: $white-color
+ .tippy-svg-arrow
+  fill: $blue2-color
+  height: 17px
+.tmenu
+ padding: 0
+ border: 1px solid $gray2-color
+ background: linear-gradient(to bottom, $white-color 0%, $gray3-color 100px, $gray3-color 100%)
+ .item
+  white-space: nowrap
+  color: $gray4-color
+  font-size: 13px
+  padding: 0 54px 0 10px
+  line-height: 25px
+  cursor: default
+  user-select: none
+  &::before
+   margin-right: 10px
+  &.contains::before
+   content: '\220B'
+  &.ne::before
+   content: '\220C'
+  &.eq::before
+   content: '\003D'
+  &.neq::before
+   content: '\2260'
+  &.starts::before
+   content: '\22A2'
+  &.any::before
+   content: '\21E2'
+  &.between::before
+   content: '\21B9'
+  &.gte::before
+   content: '\2265'
+  &.lte::before
+   content: '\2264'
+  &:hover
+   color: $white-color
+   background: linear-gradient(to bottom, $gray5-color, $gray6-color)
+   transition: box-shadow 1.6s
+   &.process
+    box-shadow: inset 100px 0 100px $red1-color
+  &.submenu
+   position: relative
+   &::after
+    content: ""
+    position: absolute
+    right: 6px
+    top: 50%
+    transform: translateY(-50%)
+    border: 5px solid transparent
+    border-left-color: $gray-color

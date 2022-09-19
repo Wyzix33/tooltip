@@ -1,0 +1,13 @@
+{
+ "name": "tooltip",
+ "version": "1.0.0",
+ "description": "tooltip wrapper",
+ "main": "tooltip.js",
+ "author": "Floricel Gabriel-Costin",
+ "license": "No License",
+ "private": true,
+ "dependencies": {
+  "tippy.js": "^6.3.7",
+  "event": "Wyzix33/event"
+ }
+}
